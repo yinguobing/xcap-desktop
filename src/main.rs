@@ -18,7 +18,7 @@ fn main() -> eframe::Result {
         ..Default::default()
     };
     eframe::run_native(
-        "eframe template",
+        "xcap desktop",
         native_options,
         Box::new(|cc| Ok(Box::new(xcap_desktop::TemplateApp::new(cc)))),
     )
