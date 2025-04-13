@@ -20,7 +20,7 @@ fn main() -> eframe::Result {
     eframe::run_native(
         "xcap desktop",
         native_options,
-        Box::new(|cc| Ok(Box::new(xcap_desktop::TemplateApp::new(cc)))),
+        Box::new(|cc| Ok(Box::new(xcap_desktop::XcapDesktop::new(cc)))),
     )
 }
 
@@ -50,7 +50,7 @@ fn main() {
             .start(
                 canvas,
                 web_options,
-                Box::new(|cc| Ok(Box::new(xcap_desktop::TemplateApp::new(cc)))),
+                Box::new(|cc| Ok(Box::new(xcap_desktop::XcapDesktop::new(cc)))),
             )
             .await;
 
